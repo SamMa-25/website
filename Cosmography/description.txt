@@ -1,0 +1,34 @@
+PROJECT DESCRIPTION TEMPLATE
+============================
+
+Project Name: Cosmography
+
+Description:
+Upon Our Fingertips: Speculative Fictions for a New Spatial Language
+
+As humanity transitions into digital and extraterrestrial realms, Cosmography speculates on a future where language is no longer written in 2D symbols but spatially composed—typed not as text, but as architecture. The keyboard becomes a launchpad, and from each keystroke, a planetary system is born.
+
+In this future, communication unfolds through a spatial syntax—a generative system where structures materialize from thought, consciousness, and collective intention. Each form, orbit, and trajectory is governed by the gravitational laws of physics, binding architectures across cosmic distances. What was once mere data now becomes inhabited space—planets, networks, and rituals of co-existence.
+
+This project visualizes a distributed architecture of consciousness, where the interface between human and machine, Earth and cosmos, is reimagined. Worlds are typed into being. Each structure is a word; each orbit, a grammar; each connection, a sentence in the language of space.
+
+Cosmography invites us to imagine architecture not as static form, but as a living, evolving code of shared meaning—etched into the universe by the choreography of our fingertips.
+
+
+
+Process:
+- Initial concept development through parametric modeling
+- Digital fabrication and prototyping
+- Iterative design refinement
+- Final implementation and documentation
+
+Technologies Used:
+- Rhino + Grasshopper for parametric modeling
+- 3D rendering for prototyping
+- Interactive visualization
+
+
+Year: [2022]
+
+Additional Notes:
+[credit: Junpeng Shi, Lily Li, Yuki Cao] 

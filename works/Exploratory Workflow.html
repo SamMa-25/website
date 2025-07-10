@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratory Workflow - Yingxuan Ma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .project-header {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        
+        .project-title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
+        }
+        
+        .project-subtitle {
+            font-size: 1.4rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        .project-description {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        
+        .project-section {
+            margin: 60px 0;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-images {
+            margin: 60px 0;
+        }
+        
+        .project-image {
+            width: 100%;
+            margin-bottom: 60px;
+            overflow: visible;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+        
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .ai-grid .project-image {
+            margin-bottom: 0;
+        }
+        
+        .ai-grid .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+        
+        .project-video {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        
+        .project-video video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 20px 0;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+        
+        .back-link::before {
+            content: "← ";
+        }
+        
+        .project-details {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .detail-item {
+            margin-bottom: 15px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            color: #666;
+        }
+        
+        .concept-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #333;
+            margin: 30px 0;
+            font-weight: 300;
+        }
+        
+        .stage-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #333;
+            margin: 40px 0 20px 0;
+            border-left: 4px solid #666;
+            padding-left: 15px;
+        }
+        
+        .press-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 2px solid #333;
+            transition: color 0.3s ease;
+        }
+        
+        .press-link:hover {
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 2.5rem;
+            }
+            
+            .project-content {
+                padding: 0 15px;
+            }
+            
+            .project-image {
+                margin-bottom: 40px;
+            }
+            
+            .ai-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">Yingxuan Ma</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Works</a></li>
+                <li><a href="../shows.html" class="nav-link">Shows</a></li>
+                <li><a href="../press.html" class="nav-link">Press</a></li>
+                <li><a href="../conversations.html" class="nav-link">Conversations</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <a href="../index.html" class="back-link">Back to Works</a>
+            
+            <div class="project-content">
+                <header class="project-header">
+                    <h1 class="project-title">Exploratory Workflow</h1>
+                    <p class="project-subtitle">An Odyssey from Coral to Digital Confluence</p>
+                    <p class="project-publication">
+                        <a href="https://news.artnet.com/art-world/art-school-partners-ai-company-risd-invoke-2602338" target="_blank" style="color: #666; text-decoration: none; font-style: italic; font-size: 1rem;">
+                            Published on Artnet News
+                        </a>
+                    </p>
+                </header>
+
+                <div class="concept-text">
+                    "In every grain of sand there is a story of the earth." If this is true for sand, what tales might a coral whisper to us if we truly listened? In the age where technology threads seamlessly with art, the "Exploratory Workflow" project seeks to unravel these whispered tales and shape them through layers of both the digital and the physical.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Exploratory Workflow_Research.png" alt="Exploratory Workflow Research">
+                    <div class="image-caption">Research Phase - Initial Coral Observation and Digital Documentation</div>
+                </div>
+
+                <div class="stage-title">Stage 1: OBSERVATION</div>
+                <div class="concept-text">
+                    It begins with the elemental: the coral. Nature's intricate masterpiece. Its every ridge and groove tells a saga of time, environment, and evolution. This observation is not mere witnessing; it's a communion.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Origial coral Scanned.png" alt="Original Coral Scanned">
+                    <div class="image-caption">Original Coral - Initial 3D Scanning</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Coral Multiplication.jpg" alt="Coral Multiplication">
+                    <div class="image-caption">Coral Multiplication - Nature's Intricate Masterpiece</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Coral with Lighting.png" alt="Coral with Lighting">
+                    <div class="image-caption">Coral with Lighting - Enhanced Observation</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Coral with Lighting 2.png" alt="Coral with Lighting 2">
+                    <div class="image-caption">Coral with Lighting 2 - Detailed Study</div>
+                </div>
+
+                <div class="stage-title">Stage 2: 3D SCANNING + DIGITAL COMPUTATION</div>
+                <div class="concept-text">
+                    Transferring the coral to a digital paradigm creates a space to reimagine it. What if the coral could dream? This stage is about extrapolating its essence, enhancing, and distorting. In this provocative atmosphere, we can stretch the boundaries of our understanding.
+                </div>
+
+                <div class="stage-title">Stage 3: 3D PRINT + VACUUM FORM</div>
+                <div class="concept-text">
+                    A reincarnation. From bytes to matter, the digital coral comes alive in a new avatar. Yet, as it finds form, it carries with it the ghostly echoes of the digital manipulations, a blend of what was and what has been imagined.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/3D printing.jpg" alt="3D Printing Process">
+                    <div class="image-caption">3D Printing Process - Digital to Physical Transformation</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Vacuum Forming.png" alt="Vacuum Forming">
+                    <div class="image-caption">Vacuum Forming - Material Reincarnation</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Blender Rendering.png" alt="Blender Rendering">
+                    <div class="image-caption">Blender Rendering - Digital Visualization</div>
+                </div>
+
+                <div class="ai-grid">
+                    <div class="project-image">
+                        <img src="../Exploratory Workflow/AI_1.png" alt="AI Processing 1">
+                        <div class="image-caption">AI Processing 1 - Digital Extrapolation</div>
+                    </div>
+                    <div class="project-image">
+                        <img src="../Exploratory Workflow/AI_2.png" alt="AI Processing 2">
+                        <div class="image-caption">AI Processing 2 - Essence Enhancement</div>
+                    </div>
+                    <div class="project-image">
+                        <img src="../Exploratory Workflow/AI_3.png" alt="AI Processing 3">
+                        <div class="image-caption">AI Processing 3 - Boundary Stretching</div>
+                    </div>
+                    <div class="project-image">
+                        <img src="../Exploratory Workflow/AI_4.png" alt="AI Processing 4">
+                        <div class="image-caption">AI Processing 4 - Digital Distortion</div>
+                    </div>
+                </div>
+
+                <div class="stage-title">Stage 4: 3D SCANNING + DIGITAL COMPUTATION</div>
+                <div class="concept-text">
+                    The dance between realms continues. The reborn coral now undergoes another layer of digital interpretation. It's a reiteration of exploration, asking newer questions, seeking deeper truths.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/sceen shot on Blender.jpg" alt="Screen Shot on Blender">
+                    <div class="image-caption">Screen Shot on Blender - Digital Interpretation</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Digital Reality.jpg" alt="Digital Reality">
+                    <div class="image-caption">Digital Reality - Reiteration and Deeper Truths</div>
+                </div>
+
+                <div class="stage-title">Stage 5: INK / PRINT MEDIA</div>
+                <div class="concept-text">
+                    A venture into the abstract. The graphic design pushes the envelope further, projecting the coral's journey through a plethora of visual narratives. This is where the lines blur even more, and art starts resonating with metaphorical inferences.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Graphic Design and Print Media.jpg" alt="Graphic Design and Print Media">
+                    <div class="image-caption">Graphic Design and Print Media - Abstract Visual Narratives</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Physical Print.jpg" alt="Physical Print">
+                    <div class="image-caption">Physical Print - Metaphorical Inferences</div>
+                </div>
+
+                <div class="stage-title">Stage 6: MOZILLA VR HUBS</div>
+                <div class="concept-text">
+                    Immersive culmination. What began as a tangible piece from nature can now be experienced in the vast expanse of virtual reality. This is not just a viewing but a voyage. As participants move through, they might ponder: Is this the coral's memory or its dream? Or is it our interpretation of both?
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/VR space.png" alt="VR Space">
+                    <div class="image-caption">VR Space - Virtual Reality Environment</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/VR space 2.png" alt="VR Space 2">
+                    <div class="image-caption">VR Space 2 - Immersive Experience</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/VR Experience.png" alt="VR Experience">
+                    <div class="image-caption">VR Experience - Interactive Virtual Reality</div>
+                </div>
+
+                <div class="project-video">
+                    <video controls>
+                        <source src="../Exploratory Workflow/Exploratory Workflow_ digital environment.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="image-caption">Digital Environment - Interactive VR Experience</div>
+                </div>
+
+                <div class="stage-title">EXHIBITION SHOWCASE</div>
+                <div class="concept-text">
+                    The final presentation of our journey from coral to digital confluence, showcasing the complete workflow and its philosophical implications.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Exhibition Showcase.png" alt="Exhibition Showcase">
+                    <div class="image-caption">Exhibition Showcase - Complete Workflow Display</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Exhibition Showcase 2.png" alt="Exhibition Showcase 2">
+                    <div class="image-caption">Exhibition Showcase 2 - Interactive Installation</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Exhibition Showcase 3.png" alt="Exhibition Showcase 3">
+                    <div class="image-caption">Exhibition Showcase 3 - Public Engagement</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Exploratory Workflow/Exhibition Showcase 4.png" alt="Exhibition Showcase 4">
+                    <div class="image-caption">Exhibition Showcase 4 - Final Presentation</div>
+                </div>
+
+                <div class="concept-text">
+                    As we oscillate between the tactile and the virtual in this "Exploratory Workflow," we touch upon a profound philosophical musing: In our age, what truly is the distinction between the tangible and intangible? The 'real' and the 'imagined'? This project is not just about the coral, art, or technology. It's an exploration of existence in a world where boundaries are constantly redefined.
+                </div>
+
+                <div class="concept-text">
+                    Amidst this transformation from vacuum forming, a tale from the annals of humanity emerges. As the coral takes shape, it is sheathed in plastic, drawing parallels to a time when humans, in their ceaseless endeavor to preserve, enveloped live corals in a protective shield of plastic. These actions, though undertaken with the hope of conserving these fragile marine entities from external threats, were ironically emblematic of our sometimes misguided interventions with nature.
+                </div>
+
+                <div class="concept-text">
+                    The plastic-wrapped coral, then, isn't merely a physical form; it's a poignant narrative of humanity's dance with nature, an oscillation between protection and domination, care and oblivion. As observers witness this stage, they are gently nudged to reflect on our place in the natural world and the consequences, both intended and unforeseen, of our touch upon it.
+                </div>
+
+                <div class="concept-text">
+                    By the journey's end, participants are left with more than just an experience. They're left with a contemplation – on art, nature, technology, and the intriguing intersections of these realms. In the digital age, where everything can be replicated, reimagined, and reborn, what becomes of the essence of the original? And more importantly, as creators and observers, where do we stand amidst these shifting sands?
+                </div>
+
+                <div class="project-details">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Year</div>
+                            <div class="detail-value">2023</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Duration</div>
+                            <div class="detail-value">6 months</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Location</div>
+                            <div class="detail-value">Providence</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Team</div>
+                            <div class="detail-value">Jason Liao</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Publication</div>
+                            <div class="detail-value">
+                                <a href="https://news.artnet.com/art-world/art-school-partners-ai-company-risd-invoke-2602338" class="press-link" target="_blank">Featured on Artnet News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yingxuan Ma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techland - Yingxuan Ma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .project-header {
+            margin-bottom: 60px;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .project-description {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .project-image {
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.02);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+        
+        .back-link::before {
+            content: "← ";
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">Yingxuan Ma</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Works</a></li>
+                <li><a href="../shows.html" class="nav-link">Shows</a></li>
+                <li><a href="../press.html" class="nav-link">Press</a></li>
+                <li><a href="../conversations.html" class="nav-link">Conversations</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <a href="../index.html" class="back-link">Back to Works</a>
+            
+            <div class="project-content">
+                <header class="project-header">
+                    <h1 class="project-title">Techland</h1>
+                    <p class="project-description">PROJECT DESCRIPTION TEMPLATE
+============================
+
+Project Name: [Your Project Name]
+
+Description:
+This project explores the karmic process of transformation and emergence through architectural design. The work demonstrates how computational design methodologies can create spaces that evolve and adapt to human experience and environmental conditions.
+
+Process:
+- Initial concept development through parametric modeling
+- Digital fabrication and prototyping
+- Iterative design refinement
+- Final implementation and documentation
+
+Technologies Used:
+- Rhino + Grasshopper for parametric modeling
+- 3D printing for prototyping
+- Digital fabrication techniques
+- Interactive visualization
+
+Key Features:
+- Responsive design elements
+- Sustainable material choices
+- Community engagement aspects
+- Technological innovation
+
+Year: [Year]
+Duration: [Duration]
+Location: [Location if applicable]
+Team: [Team members if applicable]
+
+Additional Notes:
+[Any other important information about the project] </p>
+                </header>
+
+                <section class="project-images">
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yingxuan Ma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

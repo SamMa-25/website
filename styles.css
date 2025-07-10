@@ -14,9 +14,9 @@ body {
 
 /* Container */
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 /* Navigation */
@@ -87,6 +87,7 @@ body {
 /* Page header */
 .page-header {
     margin-bottom: 60px;
+    padding: 0 20px;
 }
 
 .page-header h1 {
@@ -105,17 +106,18 @@ body {
 /* Works grid */
 .works-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 60px;
+    grid-template-columns: 1fr;
+    gap: 0;
     margin-bottom: 60px;
 }
 
 .work-item {
     transition: transform 0.3s ease;
+    margin-bottom: 0;
 }
 
 .work-item:hover {
-    transform: translateY(-5px);
+    transform: none;
 }
 
 .work-item a {
@@ -129,6 +131,8 @@ body {
     margin-bottom: 1rem;
     color: #333;
     transition: color 0.3s ease;
+    padding: 0 20px;
+    margin-top: 20px;
 }
 
 .work-item:hover h2 {
@@ -136,20 +140,24 @@ body {
 }
 
 .work-image {
-    overflow: hidden;
-    border-radius: 4px;
+    overflow: visible;
+    border-radius: 0;
     background-color: #f8f8f8;
+    width: 100%;
+    position: relative;
 }
+
+
 
 .work-image img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .work-item:hover .work-image img {
-    transform: scale(1.02);
+    transform: none;
 }
 
 /* Footer */
@@ -177,11 +185,11 @@ body {
     
     .works-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 0;
     }
     
     .work-image img {
-        height: 200px;
+        height: auto;
     }
 }
 

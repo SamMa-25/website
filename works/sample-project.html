@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project - Yingxuan Ma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .project-header {
+            margin-bottom: 60px;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .project-description {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .project-media {
+            margin: 40px 0;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 30px 0;
+        }
+        
+        .video-container video,
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .project-image {
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.02);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+        
+        .back-link::before {
+            content: "← ";
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">Yingxuan Ma</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Works</a></li>
+                <li><a href="../shows.html" class="nav-link">Shows</a></li>
+                <li><a href="../press.html" class="nav-link">Press</a></li>
+                <li><a href="../conversations.html" class="nav-link">Conversations</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <a href="../index.html" class="back-link">Back to Works</a>
+            
+            <div class="project-content">
+                <header class="project-header">
+                    <h1 class="project-title">Sample Project with Video</h1>
+                    <p class="project-description">This project demonstrates the karmic process of transformation through computational design and digital fabrication. The video shows the evolution of form and the emergence of architectural solutions.</p>
+                </header>
+
+                <section class="project-media">
+                    <h2>Project Video</h2>
+                    
+                    <!-- Option 1: Direct Video File -->
+                    <div class="video-container">
+                        <video controls>
+                            <source src="../videos/sample-project.mp4" type="video/mp4">
+                            <source src="../videos/sample-project.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <!-- Option 2: YouTube Embed -->
+                    <!--
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    -->
+                    
+                    <!-- Option 3: Vimeo Embed -->
+                    <!--
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    -->
+                </section>
+
+                <section class="project-details">
+                    <h2>Project Details</h2>
+                    <p>This project explores the intersection of computational design and karmic transformation. Through algorithmic processes, the architecture emerges and evolves, creating spaces that respond to human experience and environmental conditions.</p>
+                    
+                    <h3>Process</h3>
+                    <p>The design process began with parametric modeling using Grasshopper and Rhino. The algorithm was designed to respond to site conditions, program requirements, and environmental factors, creating a form that emerges through iterative transformation.</p>
+                    
+                    <h3>Technology</h3>
+                    <ul>
+                        <li>Rhino + Grasshopper for parametric modeling</li>
+                        <li>3D printing for prototyping</li>
+                        <li>Digital fabrication for final components</li>
+                        <li>Interactive visualization for user feedback</li>
+                    </ul>
+                </section>
+
+                <section class="project-images">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop" alt="Project Process 1">
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop" alt="Project Process 2">
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop" alt="Project Process 3">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yingxuan Ma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

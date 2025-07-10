@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmography - Yingxuan Ma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .project-header {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        
+        .project-title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
+        }
+        
+        .project-subtitle {
+            font-size: 1.4rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        .project-description {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        
+        .project-section {
+            margin: 60px 0;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .project-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-image:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 15px;
+            background: #f8f8f8;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+        
+        .back-link::before {
+            content: "← ";
+        }
+        
+        .project-details {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .detail-item {
+            margin-bottom: 15px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            color: #666;
+        }
+        
+        .concept-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #333;
+            margin: 30px 0;
+            font-weight: 300;
+        }
+        
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 2.5rem;
+            }
+            
+            .project-images {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-content {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">Yingxuan Ma</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Works</a></li>
+                <li><a href="../shows.html" class="nav-link">Shows</a></li>
+                <li><a href="../press.html" class="nav-link">Press</a></li>
+                <li><a href="../conversations.html" class="nav-link">Conversations</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <a href="../index.html" class="back-link">Back to Works</a>
+            
+            <div class="project-content">
+                <header class="project-header">
+                    <h1 class="project-title">Cosmography</h1>
+                    <p class="project-subtitle">Upon Our Fingertips: Speculative Fictions for a New Spatial Language</p>
+                </header>
+
+                <div class="concept-text">
+                    As humanity transitions into digital and extraterrestrial realms, Cosmography speculates on a future where language is no longer written in 2D symbols but spatially composed—typed not as text, but as architecture. The keyboard becomes a launchpad, and from each keystroke, a planetary system is born.
+                </div>
+
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="../Cosmography/Final Render 3.png" alt="Cosmography Final Render">
+                        <div class="image-caption">Final Render - Planetary System Visualization</div>
+                    </div>
+                    <div class="project-image">
+                        <img src="../Cosmography/Background.png" alt="Cosmography Background">
+                        <div class="image-caption">Background - Spatial Language Framework</div>
+                    </div>
+                </div>
+
+                <div class="concept-text">
+                    In this future, communication unfolds through a spatial syntax—a generative system where structures materialize from thought, consciousness, and collective intention. Each form, orbit, and trajectory is governed by the gravitational laws of physics, binding architectures across cosmic distances. What was once mere data now becomes inhabited space—planets, networks, and rituals of co-existence.
+                </div>
+
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="../Cosmography/JPEG image.jpeg" alt="Cosmography Process Image">
+                        <div class="image-caption">Process Development - Parametric Modeling</div>
+                    </div>
+                </div>
+
+                <div class="concept-text">
+                    This project visualizes a distributed architecture of consciousness, where the interface between human and machine, Earth and cosmos, is reimagined. Worlds are typed into being. Each structure is a word; each orbit, a grammar; each connection, a sentence in the language of space.
+                </div>
+
+                <div class="concept-text">
+                    Cosmography invites us to imagine architecture not as static form, but as a living, evolving code of shared meaning—etched into the universe by the choreography of our fingertips.
+                </div>
+
+                <div class="project-details">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Year</div>
+                            <div class="detail-value">2022</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Technologies</div>
+                            <div class="detail-value">Rhino + Grasshopper, 3D Rendering, Interactive Visualization</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Process</div>
+                            <div class="detail-value">Parametric Modeling, Digital Fabrication, Iterative Design</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Team</div>
+                            <div class="detail-value">Junpeng Shi, Lily Li, Yuki Cao</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yingxuan Ma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
