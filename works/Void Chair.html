@@ -8,50 +8,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         .project-content {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
-        
         .project-header {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
+            text-align: center;
         }
-        
         .project-title {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             font-weight: 300;
-            margin-bottom: 1rem;
-            color: #333;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
         }
-        
-        .project-description {
-            font-size: 1.2rem;
+        .project-subtitle {
+            font-size: 1.4rem;
             color: #666;
-            line-height: 1.7;
-            margin-bottom: 2rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            font-style: italic;
         }
-        
-        .project-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+        .project-description {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
         }
-        
         .project-image {
-            border-radius: 4px;
-            overflow: hidden;
+            width: 100%;
+            margin-bottom: 60px;
+            overflow: visible;
         }
-        
         .project-image img {
             width: 100%;
             height: auto;
-            transition: transform 0.3s ease;
+            display: block;
+            object-fit: contain;
         }
-        
-        .project-image:hover img {
-            transform: scale(1.02);
+        .image-caption {
+            padding: 20px 0;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+            font-style: italic;
         }
-        
         .back-link {
             display: inline-block;
             margin-bottom: 40px;
@@ -59,14 +65,53 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            font-size: 1rem;
         }
-        
         .back-link:hover {
             color: #333;
         }
-        
         .back-link::before {
             content: "← ";
+        }
+        .project-details {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .detail-item {
+            margin-bottom: 15px;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .detail-value {
+            color: #666;
+        }
+        .concept-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #333;
+            margin: 30px 0;
+            font-weight: 300;
+        }
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 2.5rem;
+            }
+            .project-content {
+                padding: 0 15px;
+            }
+            .project-image {
+                margin-bottom: 40px;
+            }
         }
     </style>
 </head>
@@ -78,9 +123,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Works</a></li>
-                <li><a href="../shows.html" class="nav-link">Shows</a></li>
-                <li><a href="../press.html" class="nav-link">Press</a></li>
-                <li><a href="../conversations.html" class="nav-link">Conversations</a></li>
+                <li><a href="../curations.html" class="nav-link">Curations</a></li>
                 <li><a href="../about.html" class="nav-link">About</a></li>
             </ul>
         </div>
@@ -89,47 +132,79 @@
     <main class="main-content">
         <div class="container">
             <a href="../index.html" class="back-link">Back to Works</a>
-            
             <div class="project-content">
                 <header class="project-header">
                     <h1 class="project-title">Void Chair</h1>
-                    <p class="project-description">PROJECT DESCRIPTION TEMPLATE
-============================
-
-Project Name: [Your Project Name]
-
-Description:
-This project explores the karmic process of transformation and emergence through architectural design. The work demonstrates how computational design methodologies can create spaces that evolve and adapt to human experience and environmental conditions.
-
-Process:
-- Initial concept development through parametric modeling
-- Digital fabrication and prototyping
-- Iterative design refinement
-- Final implementation and documentation
-
-Technologies Used:
-- Rhino + Grasshopper for parametric modeling
-- 3D printing for prototyping
-- Digital fabrication techniques
-- Interactive visualization
-
-Key Features:
-- Responsive design elements
-- Sustainable material choices
-- Community engagement aspects
-- Technological innovation
-
-Year: [Year]
-Duration: [Duration]
-Location: [Location if applicable]
-Team: [Team members if applicable]
-
-Additional Notes:
-[Any other important information about the project] </p>
+                    <p class="project-subtitle">Scandinavian Craft, Spirituality, and the Uncertainty of Modern Life</p>
                 </header>
 
-                <section class="project-images">
-                </section>
+                <div class="project-image">
+                    <img src="../Void Chair/cover photo.png" alt="Void Chair Cover Photo">
+                    <div class="image-caption">Cover Photo - Void Chair in Context</div>
+                </div>
+
+                <div class="project-description">
+                    Created during my senior year exchange in Copenhagen, the Void Chair project was inspired by visits to and studies of the renowned Danish design studios of Arne Jacobsen and Fritz Hansen. It embodies the essence of Scandinavian design, merging meticulous craftsmanship traditions with grand industrial functionality and rationalist style. I sought to blend my own experiences and background to the fullest.<br><br>
+                    The work aims to convey a sense of spirituality in the act of sitting. The elastic cord underneath provides a strange yet comforting sensation of buoyancy and uncertainty, mirroring how modern society often places us in unfamiliar, uncharted states that we accept without question or acknowledgment. It serves as both an expression of and a critique of how we, as individuals, are perpetually navigating the unknown, surrendering to the present moment without fully recognizing the strangeness of our surroundings.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Void Chair/front.png" alt="Void Chair Front View">
+                    <div class="image-caption">Front View - The Void Chair's Form</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/side 1.png" alt="Void Chair Side 1">
+                    <div class="image-caption">Side View - Profile and Structure</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/side 2.png" alt="Void Chair Side 2">
+                    <div class="image-caption">Alternate Side View - Material and Craft</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/with human.png" alt="Void Chair with Human">
+                    <div class="image-caption">With Human - Scale and Use</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/with cloth.png" alt="Void Chair with Cloth">
+                    <div class="image-caption">With Cloth - Comfort and Texture</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/movement.png" alt="Void Chair Movement">
+                    <div class="image-caption">Movement - Buoyancy and Flexibility</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/movement 2.png" alt="Void Chair Movement 2">
+                    <div class="image-caption">Movement 2 - Elastic Cord in Action</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/movement 3.png" alt="Void Chair Movement 3">
+                    <div class="image-caption">Movement 3 - Dynamic Sitting Experience</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/detail 1.png" alt="Void Chair Detail 1">
+                    <div class="image-caption">Detail 1 - Craftsmanship Close-up</div>
+                </div>
+                <div class="project-image">
+                    <img src="../Void Chair/detail 2.jpg" alt="Void Chair Detail 2">
+                    <div class="image-caption">Detail 2 - Material and Joinery</div>
+                </div>
+
+                <div class="project-details">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Year</div>
+                            <div class="detail-value">2024</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Duration</div>
+                            <div class="detail-value">3 months</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Location</div>
+                            <div class="detail-value">Copenhagen, Denmark</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

@@ -7,66 +7,174 @@
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .navbar {
+            background: rgba(0, 0, 0, 0.95);
+            border-bottom: 1px solid #333;
+        }
+        
+        .nav-brand a {
+            color: #fff;
+        }
+        
+        .nav-link {
+            color: #ccc;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #fff;
+        }
+        
+        .nav-link.active::after {
+            background-color: #fff;
+        }
+        
         .project-content {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
         
         .project-header {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
+            text-align: center;
         }
         
         .project-title {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             font-weight: 300;
-            margin-bottom: 1rem;
-            color: #333;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            letter-spacing: -0.02em;
+        }
+        
+        .project-subtitle {
+            font-size: 1.4rem;
+            color: #ccc;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            font-style: italic;
         }
         
         .project-description {
-            font-size: 1.2rem;
-            color: #666;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-        }
-        
-        .project-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            font-size: 1.1rem;
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
         }
         
         .project-image {
-            border-radius: 4px;
-            overflow: hidden;
+            width: 100%;
+            margin-bottom: 60px;
+            overflow: visible;
         }
         
         .project-image img {
             width: 100%;
             height: auto;
-            transition: transform 0.3s ease;
+            display: block;
+            object-fit: contain;
         }
         
-        .project-image:hover img {
-            transform: scale(1.02);
+        .project-video {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        
+        .project-video video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 20px 0;
+            font-size: 1rem;
+            color: #ccc;
+            text-align: center;
+            font-style: italic;
         }
         
         .back-link {
             display: inline-block;
             margin-bottom: 40px;
-            color: #666;
+            color: #ccc;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            font-size: 1rem;
         }
         
         .back-link:hover {
-            color: #333;
+            color: #fff;
         }
         
         .back-link::before {
             content: "← ";
+        }
+        
+        .project-details {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            border: 1px solid #333;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .detail-item {
+            margin-bottom: 15px;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            color: #ccc;
+        }
+        
+        .concept-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #fff;
+            margin: 30px 0;
+            font-weight: 300;
+        }
+        
+        .footer {
+            border-top: 1px solid #333;
+            color: #ccc;
+        }
+        
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 2.5rem;
+            }
+            
+            .project-content {
+                padding: 0 15px;
+            }
+            
+            .project-image {
+                margin-bottom: 40px;
+            }
         }
     </style>
 </head>
@@ -93,43 +201,136 @@
             <div class="project-content">
                 <header class="project-header">
                     <h1 class="project-title">Techland</h1>
-                    <p class="project-description">PROJECT DESCRIPTION TEMPLATE
-============================
-
-Project Name: [Your Project Name]
-
-Description:
-This project explores the karmic process of transformation and emergence through architectural design. The work demonstrates how computational design methodologies can create spaces that evolve and adapt to human experience and environmental conditions.
-
-Process:
-- Initial concept development through parametric modeling
-- Digital fabrication and prototyping
-- Iterative design refinement
-- Final implementation and documentation
-
-Technologies Used:
-- Rhino + Grasshopper for parametric modeling
-- 3D printing for prototyping
-- Digital fabrication techniques
-- Interactive visualization
-
-Key Features:
-- Responsive design elements
-- Sustainable material choices
-- Community engagement aspects
-- Technological innovation
-
-Year: [Year]
-Duration: [Duration]
-Location: [Location if applicable]
-Team: [Team members if applicable]
-
-Additional Notes:
-[Any other important information about the project] </p>
+                    <p class="project-subtitle">Convergence: The Landscape Within Crevice - Embracing Non-deterministic Systems</p>
                 </header>
 
-                <section class="project-images">
-                </section>
+                <div class="project-image">
+                    <img src="../Techland/front page.png" alt="Techland Front Page">
+                    <div class="image-caption">Front Page - Techland Overview</div>
+                </div>
+
+                <div class="concept-text">
+                    Through the exploration of Turing's theory on non-deterministic machines, the project draws inspiration from three interconnected perspectives: human perception, the intelligence of mycelium, and the role of machines in shaping our experiences. It examines how humans perceive their environment from documenting and sharing experiences. It delves into mycelium intelligence, which communicates and interacts within its unique umwelt, or perceptual world. It considers how machines, as a tool for all beings, generate diverse experiences for both people and other species.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/1 top view.png" alt="Techland Top View">
+                    <div class="image-caption">1. Top View - Digital Landscape Documentation</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/2 perspective view.png" alt="Techland Perspective View">
+                    <div class="image-caption">2. Perspective View - 3D Scanned Landscape</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/3 front view.png" alt="Techland Front View">
+                    <div class="image-caption">3. Front View - Landscape Contours and Crevices</div>
+                </div>
+
+                <div class="concept-text">
+                    Converging my personal experience through a specific landscape, the work includes simulations of slime mold created in Grasshopper, using mimicry of other species for human documentation. By intertwining these perspectives, the project probes beyond current technology, challenging the deterministic narratives often ascribed to the conventional idea of technology in the world at large.
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/4 A Non-deterministic Machine.jpeg" alt="A Non-deterministic Machine">
+                    <div class="image-caption">4. A Non-deterministic Machine - Oracle-Machine Concept</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/5 mycelium+Human+machine.jpeg" alt="Mycelium + Human + Machine">
+                    <div class="image-caption">5. Mycelium + Human + Machine - Symbiotic Relationship</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/6 mycelium+Human+machine 2.jpeg" alt="Mycelium + Human + Machine 2">
+                    <div class="image-caption">6. Mycelium + Human + Machine 2 - Networked Growth</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/7 petra-dish.jpeg" alt="Petra Dish">
+                    <div class="image-caption">7. Petra Dish - Organic Growth in Digital Landscape</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/7.png" alt="Simulation 7">
+                    <div class="image-caption">7. Simulation - Digital Organic Patterns</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/8 render.jpeg" alt="Render 8">
+                    <div class="image-caption">8. Render - Convergence of Digital and Organic</div>
+                </div>
+
+                <div class="project-image">
+                    <img src="../Techland/9.png" alt="Final Render 9">
+                    <div class="image-caption">9. Final Render - Complete Convergence</div>
+                </div>
+
+                <div class="project-video">
+                    <video controls>
+                        <source src="../Techland/simulation1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="image-caption">Simulation 1 - Dynamic Growth Patterns</div>
+                </div>
+
+                <div class="project-video">
+                    <video controls>
+                        <source src="../Techland/simulation 2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="image-caption">Simulation 2 - Non-deterministic Processes</div>
+                </div>
+
+                <div class="concept-text">
+                    Through the fusion of naturally grown organic lives and digitized scanned artifacts, this project seeks to unravel the complex tapestry of interconnectivity and transformation that lies at the intersection of the natural and the technological. It is an expedition into the unseen, a symbiotic relationship that thrives at the periphery of our perception, challenging the viewer to reconsider the dichotomy between carbon and silicon based matters.
+                </div>
+
+                <div class="concept-text">
+                    The process begins with digitization of natural landscapes, capturing detailed contour and crevice that caught my attention. These digital landscapes, while precise, reveal negative spaces – voids that represent the limitations and blind spots of technological processes. It is here that the core of my artistic expression unfolds.
+                </div>
+
+                <div class="concept-text">
+                    How can binary technology's rigid precision converge with nature's fluid unpredictability? Artistic research on the exploration of negative spaces in 3D scanned landscapes of Prudence Island, spaces that I have chosen to fill with living, organic matter, symbolizing the unpredictable and non-binary nature of life as conceptualized in Turing's Oracle-machine.
+                </div>
+
+                <div class="concept-text">
+                    These negative spaces, rather than being overlooked, become the focal point of transformation. They are filled with organic materials, nurturing the growth of bacteria and fungi. This act is a deliberate embrace of the unpredictable, a nod to the Oracle-machine concept where the answers to unsolvable problems lie beyond binary logic. The growth patterns of these microorganisms are unscripted and organic, flowing into and altering the digital landscapes in ways that are both unforeseen and uncontainable.
+                </div>
+
+                <div class="concept-text">
+                    The 3D printed landscape of artifacts becomes a dynamic canvas where the static and the living, the predictable and the spontaneous, coalesce. It is an artistic expression that challenges the viewer to contemplate the realm between the digitally replicated and the organically evolved. The installation invites audiences to witness chaos, as nature's growth fills the voids left by technology, offering a glimpse into the unknown – the realm of the Oracle.
+                </div>
+
+                <div class="concept-text">
+                    This project is not just an artistic venture; it is a philosophical inquiry into the essence of being and knowing. It questions the perceived supremacy of technology over nature and highlights the intricate, often overlooked, interdependencies between these two realms. By filling the negative spaces of digital landscapes with organic growth, 'Convergence' becomes a metaphor for the necessity of embracing the non-binary, the unpredictable, and the immeasurable aspects of our existence.
+                </div>
+
+                <div class="project-details">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <div class="detail-label">Year</div>
+                            <div class="detail-value">2023</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Duration</div>
+                            <div class="detail-value">4 months</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Location</div>
+                            <div class="detail-value">Providence and Prudence Island</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Instructor</div>
+                            <div class="detail-value">Shona Kitchen</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Technologies</div>
+                            <div class="detail-value">Rhino + Grasshopper, Drone and Photogrammetry, Interactive Visualization</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

@@ -6,6 +6,87 @@
     <title>About - Yingxuan Ma</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-portrait {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .about-portrait img {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .about-cv {
+            margin-bottom: 80px;
+        }
+        
+        .about-cv h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .about-cv img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .contact-section {
+            background: #f5f5f5;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .contact-section h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .contact-section p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .contact-info {
+            margin-top: 30px;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+        
+        .contact-info strong {
+            color: #333;
+        }
+        
+        @media (max-width: 768px) {
+            .about-portrait img {
+                max-width: 100%;
+            }
+            
+            .contact-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -15,9 +96,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Works</a></li>
-                <li><a href="shows.html" class="nav-link">Shows</a></li>
-                <li><a href="press.html" class="nav-link">Press</a></li>
-                <li><a href="conversations.html" class="nav-link">Conversations</a></li>
+                <li><a href="curations.html" class="nav-link">Curations</a></li>
                 <li><a href="about.html" class="nav-link active">About</a></li>
             </ul>
         </div>
@@ -30,39 +109,13 @@
             </header>
 
             <section class="about-content">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2>Architectural Designer</h2>
-                        <p>I am a passionate architectural designer who views architecture as a karmic process of transformation and emergence. My work explores how spaces can evolve, adapt, and transform through time, creating environments that respond to and shape human experience.</p>
-                        
-                        <p>Based in New York and Toronto, I bring a unique perspective to architectural design through my concentration in technology, computation, and digital media. I believe that architecture is not static, but a living process that emerges through the interaction of form, function, technology, and human consciousness.</p>
-                        
-                        <h3>Education</h3>
-                        <ul>
-                            <li>Bachelor of Architecture, Rhode Island School of Design</li>
-                            <li>Concentration in Technology, Computation, and Digital Media</li>
-                        </ul>
-                        
-                        <h3>Skills & Expertise</h3>
-                        <ul>
-                            <li>Computational Design & Digital Fabrication</li>
-                            <li>Parametric Modeling & Algorithmic Design</li>
-                            <li>Digital Media & Visualization</li>
-                            <li>Transformative & Emergent Design Processes</li>
-                        </ul>
-                        
-                        <h3>Areas of Focus</h3>
-                        <ul>
-                            <li>Karmic transformation in architectural space</li>
-                            <li>Emergent and adaptive environments</li>
-                            <li>Interactive and responsive design systems</li>
-                            <li>Computational design methodologies</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="Architectural Designer">
-                    </div>
+                <div class="about-portrait">
+                    <img src="self-portrait photo.jpg" alt="Yingxuan Ma - Self Portrait">
+                </div>
+                
+                <div class="about-cv">
+                    <h2>Curriculum Vitae</h2>
+                    <img src="CV 2025.jpg" alt="Yingxuan Ma - CV 2025">
                 </div>
                 
                 <div class="contact-section">
